@@ -1,10 +1,12 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom"; // Import Link from React Router
 
 const Header = () => {
   return (
-    <div className="sub-header">
-     
-
+    <div>
+      <div className="sub-header">
+       
+      </div>
       {/* ***** Header Area Start ***** */}
       <header className="header-area header-sticky">
         <div className="container">
@@ -12,22 +14,36 @@ const Header = () => {
             <div className="col-12">
               <nav className="main-nav">
                 {/* ***** Logo Start ***** */}
-                <a href="index.html" className="logo">
+                <Link to="/" className="logo">
                   <h1>Villa</h1>
-                </a>
+                </Link>
                 {/* ***** Logo End ***** */}
                 {/* ***** Menu Start ***** */}
                 <ul className="nav">
-                  <li><a href="index.html" className="active">Home</a></li>
-                  <li><a href="properties.html">Properties</a></li>
-                  <li><a href="property-details.html">Property Details</a></li>
-                  <li><a href="contact.html">Contact Us</a></li>
-                  <li><a href="#"><i className="fa fa-calendar"></i> Schedule a visit</a></li>
-                </ul>   
-                <a className="menu-trigger">
-                  <span>Menu</span>
-                </a>
+                  <li>
+                    <Link to="/" className="active">
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/properties">Properties</Link>
+                  </li>
+                  <li>
+                    <Link to="/property-details">Property Details</Link>
+                  </li>
+                  <li>
+                    <Link to="/contact">Contact Us</Link>
+                  </li>
+                  <li>
+                    <Link to="/schedule-visit">
+                      <i className="fa fa-calendar"></i> Schedule a visit
+                    </Link>
+                  </li>
+                </ul>
                 {/* ***** Menu End ***** */}
+                <Link className="menu-trigger">
+                  <span>Menu</span>
+                </Link>
               </nav>
             </div>
           </div>

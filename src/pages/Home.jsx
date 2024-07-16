@@ -296,7 +296,7 @@ const Home = () => {
             <div className="col-lg-12">
               <div className="tabs-content">
                 <div className="row">
-                  <div className="nav-wrapper ">
+                  <div className="nav-wrapper">
                     <ul className="nav nav-tabs" role="tablist">
                       <li className="nav-item" role="presentation">
                         <button
@@ -337,26 +337,12 @@ const Home = () => {
                           aria-controls="penthouse"
                           aria-selected="false"
                         >
-                          Pent House
-                        </button>
-                      </li>
-                      <li className="nav-item" role="presentation">
-                        <button
-                          className="nav-link"
-                          id="office-tab"
-                          data-bs-toggle="tab"
-                          data-bs-target="#office"
-                          type="button"
-                          role="tab"
-                          aria-controls="office"
-                          aria-selected="false"
-                        >
-                          Office
+                          Penthouse
                         </button>
                       </li>
                     </ul>
                   </div>
-                  <div className="tab-content">
+                  <div className="tab-content" id="myTabContent">
                     <div
                       className="tab-pane fade show active"
                       id="appartment"
@@ -364,40 +350,49 @@ const Home = () => {
                       aria-labelledby="appartment-tab"
                     >
                       <div className="row">
-                        <div className="col-lg-6">
-                          <div className="left-image">
-                            <img src="assets/images/tab-image-01.jpg" alt="" />
+                        <div className="col-lg-3">
+                          <div className="info-table">
+                            <ul>
+                              <li>
+                                Total Flat Space <span>185 m2</span>
+                              </li>
+                              <li>
+                                Floor number <span>26th</span>
+                              </li>
+                              <li>
+                                Number of rooms <span>4</span>
+                              </li>
+                              <li>
+                                Parking Available <span>Yes</span>
+                              </li>
+                              <li>
+                                Payment Process <span>Bank</span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <div className="right-content">
-                            <h4>Best Apartment & Sea View</h4>
-                            <p>
-                              Duis aute irure dolor in reprehenderit in
-                              voluptate velit esse cillum dolore eu fugiat nulla
-                              pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt
-                              mollit anim id est laborum.
-                            </p>
-                            <ul className="list-unstyled">
-                              <li>
-                                <i className="fa fa-check"></i> Lorem ipsum
-                                dolor sit amet
-                              </li>
-                              <li>
-                                <i className="fa fa-check"></i> Consectetur
-                                adipiscing elit
-                              </li>
-                              <li>
-                                <i className="fa fa-check"></i> Integer molestie
-                                lorem at massa
-                              </li>
-                            </ul>
-                            <a
-                              href="property-details.html"
-                              className="filled-button"
-                            >
-                              View Details
+                          <img
+                            src="assets/images/deal-01.jpg"
+                            alt="Apartment Deal"
+                          />
+                        </div>
+                        <div className="col-lg-3">
+                          <h4>Extra Info About Property</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. <br />
+                            <br />
+                            When you need free CSS templates, you can simply
+                            type TemplateMo in any search engine website. In
+                            addition, you can type TemplateMo Portfolio,
+                            TemplateMo One Page Layouts, etc.
+                          </p>
+                          <div className="icon-button">
+                            <a href="property-details.html">
+                              <i className="fa fa-calendar"></i> Schedule a
+                              visit
                             </a>
                           </div>
                         </div>
@@ -410,40 +405,49 @@ const Home = () => {
                       aria-labelledby="villa-tab"
                     >
                       <div className="row">
-                        <div className="col-lg-6">
-                          <div className="left-image">
-                            <img src="assets/images/tab-image-02.jpg" alt="" />
+                        <div className="col-lg-3">
+                          <div className="info-table">
+                            <ul>
+                              <li>
+                                Total Flat Space <span>250 m2</span>
+                              </li>
+                              <li>
+                                Floor number <span>26th</span>
+                              </li>
+                              <li>
+                                Number of rooms <span>5</span>
+                              </li>
+                              <li>
+                                Parking Available <span>Yes</span>
+                              </li>
+                              <li>
+                                Payment Process <span>Bank</span>
+                              </li>
+                            </ul>
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <div className="right-content">
-                            <h4>Best Villa House & Sea View</h4>
-                            <p>
-                              Duis aute irure dolor in reprehenderit in
-                              voluptate velit esse cillum dolore eu fugiat nulla
-                              pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt
-                              mollit anim id est laborum.
-                            </p>
-                            <ul className="list-unstyled">
-                              <li>
-                                <i className="fa fa-check"></i> Lorem ipsum
-                                dolor sit amet
-                              </li>
-                              <li>
-                                <i className="fa fa-check"></i> Consectetur
-                                adipiscing elit
-                              </li>
-                              <li>
-                                <i className="fa fa-check"></i> Integer molestie
-                                lorem at massa
-                              </li>
-                            </ul>
-                            <a
-                              href="property-details.html"
-                              className="filled-button"
-                            >
-                              View Details
+                          <img
+                            src="assets/images/deal-02.jpg"
+                            alt="Villa Deal"
+                          />
+                        </div>
+                        <div className="col-lg-3">
+                          <h4>Detail Info About Villa</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. <br />
+                            <br />
+                            Swag fanny pack lyft blog twee. JOMO ethical copper
+                            mug, succulents typewriter shaman DIY kitsch twee
+                            taiyaki fixie hella venmo after messenger poutine
+                            next level humblebrag swag franzen.
+                          </p>
+                          <div className="icon-button">
+                            <a href="property-details.html">
+                              <i className="fa fa-calendar"></i> Schedule a
+                              visit
                             </a>
                           </div>
                         </div>
@@ -456,86 +460,49 @@ const Home = () => {
                       aria-labelledby="penthouse-tab"
                     >
                       <div className="row">
-                        <div className="col-lg-6">
-                          <div className="left-image">
-                            <img src="assets/images/tab-image-03.jpg" alt="" />
-                          </div>
-                        </div>
-                        <div className="col-lg-6">
-                          <div className="right-content">
-                            <h4>Best Pent House & Sea View</h4>
-                            <p>
-                              Duis aute irure dolor in reprehenderit in
-                              voluptate velit esse cillum dolore eu fugiat nulla
-                              pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt
-                              mollit anim id est laborum.
-                            </p>
-                            <ul className="list-unstyled">
+                        <div className="col-lg-3">
+                          <div className="info-table">
+                            <ul>
                               <li>
-                                <i className="fa fa-check"></i> Lorem ipsum
-                                dolor sit amet
+                                Total Flat Space <span>320 m2</span>
                               </li>
                               <li>
-                                <i className="fa fa-check"></i> Consectetur
-                                adipiscing elit
+                                Floor number <span>34th</span>
                               </li>
                               <li>
-                                <i className="fa fa-check"></i> Integer molestie
-                                lorem at massa
+                                Number of rooms <span>6</span>
+                              </li>
+                              <li>
+                                Parking Available <span>Yes</span>
+                              </li>
+                              <li>
+                                Payment Process <span>Bank</span>
                               </li>
                             </ul>
-                            <a
-                              href="property-details.html"
-                              className="filled-button"
-                            >
-                              View Details
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      className="tab-pane fade"
-                      id="office"
-                      role="tabpanel"
-                      aria-labelledby="office-tab"
-                    >
-                      <div className="row">
-                        <div className="col-lg-6">
-                          <div className="left-image">
-                            <img src="assets/images/tab-image-04.jpg" alt="" />
                           </div>
                         </div>
                         <div className="col-lg-6">
-                          <div className="right-content">
-                            <h4>Best Office & Sea View</h4>
-                            <p>
-                              Duis aute irure dolor in reprehenderit in
-                              voluptate velit esse cillum dolore eu fugiat nulla
-                              pariatur. Excepteur sint occaecat cupidatat non
-                              proident, sunt in culpa qui officia deserunt
-                              mollit anim id est laborum.
-                            </p>
-                            <ul className="list-unstyled">
-                              <li>
-                                <i className="fa fa-check"></i> Lorem ipsum
-                                dolor sit amet
-                              </li>
-                              <li>
-                                <i className="fa fa-check"></i> Consectetur
-                                adipiscing elit
-                              </li>
-                              <li>
-                                <i className="fa fa-check"></i> Integer molestie
-                                lorem at massa
-                              </li>
-                            </ul>
-                            <a
-                              href="property-details.html"
-                              className="filled-button"
-                            >
-                              View Details
+                          <img
+                            src="assets/images/deal-03.jpg"
+                            alt="Penthouse Deal"
+                          />
+                        </div>
+                        <div className="col-lg-3">
+                          <h4>Extra Info About Penthouse</h4>
+                          <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. <br />
+                            <br />
+                            Swag fanny pack lyft blog twee. JOMO ethical copper
+                            mug, succulents typewriter shaman DIY kitsch twee
+                            taiyaki fixie hella venmo after messenger poutine
+                            next level humblebrag swag franzen.
+                          </p>
+                          <div className="icon-button">
+                            <a href="property-details.html">
+                              <i className="fa fa-calendar"></i> Schedule a
+                              visit
                             </a>
                           </div>
                         </div>
@@ -549,18 +516,237 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="contact section">
-    <div className="container">
-      <div className="row">
-        <div className="col-lg-4 offset-lg-4">
-          <div className="section-heading text-center">
-            <h6>| Contact Us</h6>
-            <h2>Get In Touch With Our Agents</h2>
+      <div className="properties section">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 offset-lg-4">
+              <div className="section-heading text-center">
+                <h6>| Properties</h6>
+                <h2>We Provide The Best Property You Like</h2>
+              </div>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-4 col-md-6">
+              <div className="item">
+                <a href="property-details.html">
+                  <img src="assets/images/property-01.jpg" alt="" />
+                </a>
+                <span className="category">Luxury Villa</span>
+                <h6>$2.264.000</h6>
+                <h4>
+                  <a href="property-details.html">
+                    18 New Street Miami, OR 97219
+                  </a>
+                </h4>
+                <ul>
+                  <li>
+                    Bedrooms: <span>8</span>
+                  </li>
+                  <li>
+                    Bathrooms: <span>8</span>
+                  </li>
+                  <li>
+                    Area: <span>545m2</span>
+                  </li>
+                  <li>
+                    Floor: <span>3</span>
+                  </li>
+                  <li>
+                    Parking: <span>6 spots</span>
+                  </li>
+                </ul>
+                <div className="main-button">
+                  <a href="property-details.html">Schedule a visit</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="item">
+                <a href="property-details.html">
+                  <img src="assets/images/property-02.jpg" alt="" />
+                </a>
+                <span className="category">Luxury Villa</span>
+                <h6>$1.180.000</h6>
+                <h4>
+                  <a href="property-details.html">
+                    54 Mid Street Florida, OR 27001
+                  </a>
+                </h4>
+                <ul>
+                  <li>
+                    Bedrooms: <span>6</span>
+                  </li>
+                  <li>
+                    Bathrooms: <span>5</span>
+                  </li>
+                  <li>
+                    Area: <span>450m2</span>
+                  </li>
+                  <li>
+                    Floor: <span>3</span>
+                  </li>
+                  <li>
+                    Parking: <span>8 spots</span>
+                  </li>
+                </ul>
+                <div className="main-button">
+                  <a href="property-details.html">Schedule a visit</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="item">
+                <a href="property-details.html">
+                  <img src="assets/images/property-03.jpg" alt="" />
+                </a>
+                <span className="category">Luxury Villa</span>
+                <h6>$1.460.000</h6>
+                <h4>
+                  <a href="property-details.html">
+                    26 Old Street Miami, OR 38540
+                  </a>
+                </h4>
+                <ul>
+                  <li>
+                    Bedrooms: <span>5</span>
+                  </li>
+                  <li>
+                    Bathrooms: <span>4</span>
+                  </li>
+                  <li>
+                    Area: <span>225m2</span>
+                  </li>
+                  <li>
+                    Floor: <span>3</span>
+                  </li>
+                  <li>
+                    Parking: <span>10 spots</span>
+                  </li>
+                </ul>
+                <div className="main-button">
+                  <a href="property-details.html">Schedule a visit</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="item">
+                <a href="property-details.html">
+                  <img src="assets/images/property-04.jpg" alt="" />
+                </a>
+                <span className="category">Apartment</span>
+                <h6>$584.500</h6>
+                <h4>
+                  <a href="property-details.html">
+                    12 New Street Miami, OR 12650
+                  </a>
+                </h4>
+                <ul>
+                  <li>
+                    Bedrooms: <span>4</span>
+                  </li>
+                  <li>
+                    Bathrooms: <span>3</span>
+                  </li>
+                  <li>
+                    Area: <span>125m2</span>
+                  </li>
+                  <li>
+                    Floor: <span>25th</span>
+                  </li>
+                  <li>
+                    Parking: <span>2 cars</span>
+                  </li>
+                </ul>
+                <div className="main-button">
+                  <a href="property-details.html">Schedule a visit</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="item">
+                <a href="property-details.html">
+                  <img src="assets/images/property-05.jpg" alt="" />
+                </a>
+                <span className="category">Penthouse</span>
+                <h6>$925.600</h6>
+                <h4>
+                  <a href="property-details.html">
+                    34 Beach Street Miami, OR 42680
+                  </a>
+                </h4>
+                <ul>
+                  <li>
+                    Bedrooms: <span>4</span>
+                  </li>
+                  <li>
+                    Bathrooms: <span>4</span>
+                  </li>
+                  <li>
+                    Area: <span>180m2</span>
+                  </li>
+                  <li>
+                    Floor: <span>38th</span>
+                  </li>
+                  <li>
+                    Parking: <span>2 cars</span>
+                  </li>
+                </ul>
+                <div className="main-button">
+                  <a href="property-details.html">Schedule a visit</a>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="item">
+                <a href="property-details.html">
+                  <img src="assets/images/property-06.jpg" alt="" />
+                </a>
+                <span className="category">Modern Condo</span>
+                <h6>$450.000</h6>
+                <h4>
+                  <a href="property-details.html">
+                    22 New Street Portland, OR 16540
+                  </a>
+                </h4>
+                <ul>
+                  <li>
+                    Bedrooms: <span>3</span>
+                  </li>
+                  <li>
+                    Bathrooms: <span>2</span>
+                  </li>
+                  <li>
+                    Area: <span>165m2</span>
+                  </li>
+                  <li>
+                    Floor: <span>26th</span>
+                  </li>
+                  <li>
+                    Parking: <span>3 cars</span>
+                  </li>
+                </ul>
+                <div className="main-button">
+                  <a href="property-details.html">Schedule a visit</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
+
+      <div className="contact section">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 offset-lg-4">
+              <div className="section-heading text-center">
+                <h6>| Contact Us |</h6>
+                <h2>Get In Touch With Our Agents</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className="call-to-action">
         <div className="container">
@@ -568,7 +754,6 @@ const Home = () => {
             <div className="col-lg-12">
               <div className="inner-content">
                 <div className="row">
-                  
                   <div className="col-lg-4">
                     <div className="solid-button">
                       <a href="tel:00123456789">Click Here</a>
